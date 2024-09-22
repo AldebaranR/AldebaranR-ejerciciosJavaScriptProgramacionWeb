@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página Principal</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="ejercicio8.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <ul class="nav-links">
+                <li><a href="index.html">Ejercicio 1</a></li>
+                <li><a href="page1.html">Ejercicio 2</a></li>
+                <li><a href="page2.html">Ejercicio 3</a></li>
+                <li><a href="page3.html">Ejercicio 4</a></li>
+                <li><a href="page4.html">Ejercicio 5</a></li>
+                <li><a href="page5.html">Ejercicio 6</a></li>
+                <li><a href="page6.html">Ejercicio 7</a></li>
+                <li><a href="page7.html">Ejercicio 8</a></li>
+                <li><a href="page8.html">Ejercicio 9</a></li>
+                <li><a href="page9.html">Ejercicio 10</a></li>  
+            </ul>
+            <div class="burger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+        </nav>
+    </header>
+    
+    <main class="container">
+        <h1>Calculadora de Utilidades Anuales</h1>
+        <p>Ingrese su salario mensual y los años de antigüedad en la empresa para calcular las utilidades.</p>
+
+        <form id="utilidad-form">
+            <label for="salario">Salario mensual:</label>
+            <input type="number" id="salario" name="salario" placeholder="Ingrese su salario mensual" step="0.01" required>
+
+            <label for="antiguedad">Años de antigüedad:</label>
+            <input type="number" id="antiguedad" name="antiguedad" placeholder="Ingrese su antigüedad en años" step="0.1" max="999.9" required maxlength="5">
+
+            <button type="submit">Calcular</button>
+        </form>
+
+        <div id="result"></div>
+    </main>
+
+    <script src="ejercicio8.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
